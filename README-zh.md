@@ -4,6 +4,7 @@
 
 > 基于元认知框架的 AI Rust 开发助手
 
+[![Version](https://img.shields.io/badge/version-2.0.2-green.svg)](https://github.com/ZhangHanDong/rust-skills/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://github.com/anthropics/claude-code)
 
@@ -45,7 +46,15 @@ AI (使用 Rust Skills):
 
 ## 安装
 
-### 方式一：完整插件安装（推荐）
+### 方式一：Marketplace 安装（推荐）
+
+直接从 Claude Code 插件市场安装：
+
+```bash
+/plugin marketplace add ZhangHanDong/rust-skills
+```
+
+### 方式二：完整插件安装
 
 此方式启用**所有功能，包括 hooks**，自动触发元认知流程。
 
@@ -57,7 +66,7 @@ git clone https://github.com/ZhangHanDong/rust-skills.git
 claude --plugin-dir /path/to/rust-skills
 ```
 
-### 方式二：仅安装 Skills
+### 方式三：仅安装 Skills
 
 此方式仅安装 skills，不包含 hooks。需要手动调用 skills。
 
@@ -71,12 +80,13 @@ cp -r rust-skills/skills/* ~/.claude/skills/
 
 ### 功能对比
 
-| 功能 | 完整插件 | 仅 Skills |
-|------|----------|-----------|
-| 所有 Skills | ✅ | ✅ |
-| 自动触发元认知 | ✅ | ❌ |
-| Hook 路由 | ✅ | ❌ |
-| 后台 Agents | ✅ | ✅ |
+| 功能 | Marketplace | 完整插件 | 仅 Skills |
+|------|-------------|----------|-----------|
+| 全部 31 个 Skills | ✅ | ✅ | ✅ |
+| 自动触发元认知 | ✅ | ✅ | ❌ |
+| Hook 路由 | ✅ | ✅ | ❌ |
+| 后台 Agents | ✅ | ✅ | ✅ |
+| 便捷更新 | ✅ | ❌ | ❌ |
 
 ### 权限配置
 

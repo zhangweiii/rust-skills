@@ -4,6 +4,7 @@
 
 > メタ認知フレームワークを備えた AI Rust 開発アシスタント
 
+[![Version](https://img.shields.io/badge/version-2.0.2-green.svg)](https://github.com/ZhangHanDong/rust-skills/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://github.com/anthropics/claude-code)
 
@@ -45,7 +46,15 @@ AI (Rust Skills 使用):
 
 ## インストール
 
-### 方法1：完全プラグイン（推奨）
+### 方法1：Marketplace（推奨）
+
+Claude Code プラグインマーケットプレイスから直接インストール：
+
+```bash
+/plugin marketplace add ZhangHanDong/rust-skills
+```
+
+### 方法2：完全プラグイン
 
 この方法は **hooks を含むすべての機能**を有効にし、メタ認知を自動的にトリガーします。
 
@@ -57,7 +66,7 @@ git clone https://github.com/ZhangHanDong/rust-skills.git
 claude --plugin-dir /path/to/rust-skills
 ```
 
-### 方法2：Skills のみ
+### 方法3：Skills のみ
 
 この方法は skills のみをインストールし、hooks は含まれません。skills を手動で呼び出す必要があります。
 
@@ -71,12 +80,13 @@ cp -r rust-skills/skills/* ~/.claude/skills/
 
 ### 機能比較
 
-| 機能 | 完全プラグイン | Skills のみ |
-|------|----------------|-------------|
-| すべての Skills | ✅ | ✅ |
-| 自動メタ認知トリガー | ✅ | ❌ |
-| Hook ルーティング | ✅ | ❌ |
-| バックグラウンドエージェント | ✅ | ✅ |
+| 機能 | Marketplace | 完全プラグイン | Skills のみ |
+|------|-------------|----------------|-------------|
+| 全 31 Skills | ✅ | ✅ | ✅ |
+| 自動メタ認知トリガー | ✅ | ✅ | ❌ |
+| Hook ルーティング | ✅ | ✅ | ❌ |
+| バックグラウンドエージェント | ✅ | ✅ | ✅ |
+| 簡単な更新 | ✅ | ❌ | ❌ |
 
 ### 権限設定
 

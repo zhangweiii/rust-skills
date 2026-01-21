@@ -4,6 +4,7 @@
 
 > AI-powered Rust development assistant with meta-cognition framework
 
+[![Version](https://img.shields.io/badge/version-2.0.2-green.svg)](https://github.com/ZhangHanDong/rust-skills/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://github.com/anthropics/claude-code)
 
@@ -45,7 +46,15 @@ AI (with Rust Skills):
 
 ## Installation
 
-### Method 1: Full Plugin (Recommended)
+### Method 1: Marketplace (Recommended)
+
+Install directly from Claude Code Plugin Marketplace:
+
+```bash
+/plugin marketplace add ZhangHanDong/rust-skills
+```
+
+### Method 2: Full Plugin
 
 This method enables **all features including hooks** for automatic meta-cognition triggering.
 
@@ -57,7 +66,7 @@ git clone https://github.com/ZhangHanDong/rust-skills.git
 claude --plugin-dir /path/to/rust-skills
 ```
 
-### Method 2: Skills Only
+### Method 3: Skills Only
 
 This method only installs skills without hooks. You need to manually invoke skills.
 
@@ -71,12 +80,13 @@ cp -r rust-skills/skills/* ~/.claude/skills/
 
 ### Feature Comparison
 
-| Feature | Full Plugin | Skills Only |
-|---------|-------------|-------------|
-| All Skills | ✅ | ✅ |
-| Auto meta-cognition trigger | ✅ | ❌ |
-| Hook-based routing | ✅ | ❌ |
-| Background agents | ✅ | ✅ |
+| Feature | Marketplace | Full Plugin | Skills Only |
+|---------|-------------|-------------|-------------|
+| All 31 Skills | ✅ | ✅ | ✅ |
+| Auto meta-cognition trigger | ✅ | ✅ | ❌ |
+| Hook-based routing | ✅ | ✅ | ❌ |
+| Background agents | ✅ | ✅ | ✅ |
+| Easy updates | ✅ | ❌ | ❌ |
 
 ### Permission Configuration
 

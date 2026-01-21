@@ -5,6 +5,15 @@ All notable changes to rust-skills will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.2] - 2025-01-22
+
+### Changed
+- `README.md`, `README-zh.md`, `README-ja.md` - Added Marketplace installation method, version badge
+- `VERSION` - Updated to 2.0.2
+- `metadata.json` - Updated version, stats, skills list structure
+
+---
+
 ## [2.0.1] - 2025-01-22
 
 ### Added
