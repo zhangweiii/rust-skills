@@ -11,7 +11,7 @@
     {
       "name": "rust-skills",
       "description": "31 skills covering ownership, concurrency, error handling, unsafe code, and domain-specific patterns for Rust development",
-      "source": ".",
+      "source": "./",
       "category": "development"
     }
   ]
